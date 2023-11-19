@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hangman</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="author" content="Jordi Romero (solo)">
+    <script src="hangman.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <h1>HANGMAN</h1>
+    <h2 id="idplayer">Player Name</h2>
+    <p id="winrate"></p>
+    <img id="hangman" align="center"/>
+    <table id = "hangword" align="center">
+      <tr>
+      </tr>
+    </table>
+    <table id="MM" align="center">
+      <tr>
+      </tr>
+    </table>
+    </div>
+      <script>
+        currentround=0;
+        win=0;
+        lose=0;
+        life=6;
+        tablerow=0;
+        tablen=0;
+        wordpool=["apple", "orange", "chair", "table", "juice", "chicken"];
+        max=wordpool.length
+        min=0;
+        word="";
+        wordn=0;
+        currentguess;
+        guesses;
+      </script>
+    <p>
+      <label id="labelinput" for="input">Name:</label>
+      <textarea id="idinput" name="input"></textarea>
+    </p>
+    <button id="button" onclick="buttonpress()">Play</button>
+    
+  </body>
+</html>

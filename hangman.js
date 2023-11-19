@@ -5,7 +5,6 @@ function start(){
     tablerow=0;
     wordn=Math.floor(Math.random()* (max - min) + min);
     word = Array.from(wordpool[wordn])
-    alert(word);
     while(currentguess.length != word.length){
         currentguess.push("_")
     }
